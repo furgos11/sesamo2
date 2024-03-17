@@ -1,9 +1,14 @@
+$color-titulos: rgb(60, 136, 60);
+$margin-titulos: 10px;
+
 h1 {
-    color: rgb(60, 136, 60);
-    margin-top: 10px;
+    color: $color-titulos;
+    margin-top: $margin-titulos;
 }
 
 h2 {
-    color: rgb(60, 136, 60);
-    margin-top: 10px;
+    color: $color-titulos;
+    margin-top: $margin-titulos;
 }
+
+

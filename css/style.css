@@ -1,47 +1,48 @@
+
 * {
     margin: 0;
     padding: 0;
-}
-
-.bg-color {
+  }
+  
+  .bg-color {
     background-color: white;
-}
-
-.img-logo {
+  }
+  
+  .img-logo {
     max-width: 200px;
     height: auto;
     margin-left: 2rem;
-}
-
-.nav-enlaces {
+  }
+  
+  .nav-enlaces {
     max-width: 20%;
     height: auto;
     margin-right: 2rem;
-}
-
-.nav-item {
+  }
+  
+  .nav-item {
     padding: 1rem;
-}
-
-.container-fluid a {
+  }
+  
+  .container-fluid a {
     color: #6FAD48
-}
-
-
-h1 {
+  }
+  
+  
+  h1 {
     color: rgb(60, 136, 60);
     margin-top: 10px;
-}
-
-h2 {
+  }
+  
+  h2 {
     color: rgb(60, 136, 60);
     margin-top: 10px;
-}
-
-
-/*footer*/
-
-footer {
+  }
+  
+  
+  /*footer*/
+  
+  footer {
     font-family: "Mifuente", Arial, sans-serif;
     background-color: white;
     color: black;
@@ -49,26 +50,29 @@ footer {
     font-size: 15px;
     border-top: 2px solid black;
     margin-top: 10px;
-}
-
-.social-buttons {
+  }
+  
+  .social-buttons {
     display: flex;
     justify-content: center;
-}
-
-.social-buttons a {
+  }
+  
+  .social-buttons a {
     margin: 5px;
-}
-
-.social-buttons img {
+  }
+  
+  .social-buttons img {
     text-align: center;
     margin-top: 2px;
     margin-bottom: 2px;
     width: 40px
-}
-
-.copyright {
+  }
+  
+  .copyright {
     text-align: center;
     margin-top: 2px;
     margin-bottom: 2px;
-}
+  }
+
+
+/*# sourceMappingURL=style.css.map */

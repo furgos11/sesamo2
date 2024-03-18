@@ -1,14 +1,16 @@
-$color-titulos: rgb(60, 136, 60);
-$margin-titulos: 10px;
+$color-h: #6DAE46;
+$margin-h: 10px;
+$size: 30px;
+$family: Arial, Helvetica, sans-serif;
+
 
 h1 {
-    color: $color-titulos;
-    margin-top: $margin-titulos;
+    font-family: $family;
+    font-size: $size;
+    color: $color-h;
+    margin-top: $margin-h;
 }
 
 h2 {
-    color: $color-titulos;
-    margin-top: $margin-titulos;
+    @extend h1;
 }
-
-

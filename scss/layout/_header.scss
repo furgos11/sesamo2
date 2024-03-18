@@ -1,23 +1,33 @@
-.bg-color {
-    background-color: white;
+header {
+
+    .bg-color {
+        background-color: white;
+    }
+    
+    nav {
+        .container-fluid {
+            a {
+                .img-logo {
+                    max-width: 200px;
+                    height: auto;
+                    margin-left: 2rem;
+                }
+
+            }
+
+            ul {
+                .nav-item {
+                    a {
+                        color: #6DAE46;           
+                    }
+                    padding: 1rem;
+                    max-width: 20%;
+                    height: auto;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }     
 }
 
-.img-logo {
-    max-width: 200px;
-    height: auto;
-    margin-left: 2rem;
-}
 
-.nav-enlaces {
-    max-width: 20%;
-    height: auto;
-    margin-right: 2rem;
-}
-
-.nav-item {
-    padding: 1rem;
-}
-
-.container-fluid a {
-    color: #6FAD48
-}

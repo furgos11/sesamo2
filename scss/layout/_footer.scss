@@ -1,31 +1,38 @@
-footer {
-    font-family: "Mifuente", Arial, sans-serif;
-    background-color: white;
-    color: black;
-    padding: 1px;
-    font-size: 15px;
-    border-top: 2px solid black;
-    margin-top: 10px;
+@mixin estilosFooter ($family, $bg-color, $color, $padding, $size, $border, $margin) {
+    font-family: $family;
+    background-color: $bg-color;
+    color: $color;
+    padding: $padding;
+    font-size: $size;
+    border-top: $border;
+    margin-top: $margin;
 }
 
-.social-buttons {
-    display: flex;
-    justify-content: center;
 
-    a {
-        margin: 5px;
+footer {
+
+    @include estilosFooter(Arial, white, black, 1px, 17px, 2px solid black, 10px);
+
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+    
+        a {
+            margin: 5px;        
+    
+            img {
+                text-align: center;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                width: 40px
+            }
+        }
     }
-
-    img {
+    
+    .copyright {
         text-align: center;
         margin-top: 2px;
         margin-bottom: 2px;
-        width: 40px
     }
 }
 
-.copyright {
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}

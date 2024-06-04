@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mostrarCarrito();
     });
 
-    // Añadir el evento para el botón de vaciar carrito
+    
     document.getElementById('vaciar-carrito').addEventListener('click', (event) => {
         vaciarCarrito();
     });
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function vaciarCarrito() {
-        carrito.length = 0; // Vacia el carrito
-        actualizarCarrito(); // Actualiza la interfaz
+        carrito.length = 0; 
+        actualizarCarrito(); 
     }
 });

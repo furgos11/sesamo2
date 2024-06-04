@@ -10,6 +10,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 
+    <script src="../objetos.js" defer></script>
+    <script src="../js/carrito.js" defer></script>
+
     <meta name="keywords" content="sesamo, comida, saludable, casero, delivery, takeaway, rico, vegano">
     <meta name="description" content="Sésamo: Sabores frescos, opciones saludables. Descubre una experiencia gastronómica única en un ambiente acogedor.">
     <meta name="whatsapp" content="+59899165493">
@@ -48,6 +51,9 @@
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="./contacto.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#" id="carrito-link">Carrito 🛒</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -61,122 +67,113 @@
     <section class="ms-md-4 me-md-4">
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/principal.jpg" class="card-img-top" alt="plato del dia">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Principales</h5>
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush flex-grow-1">
                             <li class="list-group-item">Plato del día | $360</li>
-                            <li class="list-group-item">Visitá nuestro Instagram para conocerlo, todos los días una
-                                propuesta distinta</li>
+                            <li class="list-group-item">Visitá nuestro Instagram para conocerlo, todos los días una propuesta distinta</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="productos">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/ensaladacompleta.jpg" class="card-img-top" alt="ensalada completa">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Ensalada completa | $360</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Arroz integral + lechuga + rúcula + repollo + zanahoria + tomate
-                                + remolacha + semillas + huevo + proteína a elección: (pollo a la mostaza y miel,
-                                bondiola  en fetas, atún, tofu marinado en soja, seitán marinado en soja, tempeh marinado en soja)
-                            </li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Arroz integral + lechuga + rúcula + repollo + zanahoria + tomate + remolacha + semillas + huevo + proteína a elección: (pollo a la mostaza y miel, bondiola en fetas, atún, tofu marinado en soja, seitán marinado en soja, tempeh marinado en soja)</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="ensalada-completa">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/ensaladatibia.JPG" class="card-img-top" alt="ensalada tibia">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Ensalada tibia | $360</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Lechuga + rúcula + repollo + zanahoria y brócoli asados +
-                                cherry confitados + arroz integral + hummus de garbanzos + huevo + lascas de parmesano +
-                                cebolla encurtida + semillas (opción vegana)</li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Lechuga + rúcula + repollo + zanahoria y brócoli asados + cherry confitados + arroz integral + hummus de garbanzos + huevo + lascas de parmesano + cebolla encurtida + semillas (opción vegana)</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="ensalada-tibia">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/ensaladapalta.jpg" class="card-img-top" alt="ensalada palta">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Ensalada de palta | $360</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Lechuga + rúcula + palta + tomates cherry + huevo +
-                                arroz integral + repollo asado + lascas de parmesano + frutos secos +
-                                babaganoush (opción vegana)</li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Lechuga + rúcula + palta + tomates cherry + huevo + arroz integral + repollo asado + lascas de parmesano + frutos secos + babaganoush (opción vegana)</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="ensalada-palta">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/ensaladagarbanzo.jpg" class="card-img-top" alt="ensalada garbanzos">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Ensalada de garbanzos | $360</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Lechuga + Rúcula + garbanzos salteados + vegetales asados +
-                                tomate cherry + zanahoria + arroz integral + huevo + semillas (opción vegana)</li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Lechuga + Rúcula + garbanzos salteados + vegetales asados + tomate cherry + zanahoria + arroz integral + huevo + semillas (opción vegana)</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="ensalada-garbanzos">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/empanadas.jpg" class="card-img-top" alt="empanadas">
-                    <div class="card-body">
-                        <h5 class="card-title">Empanadas | $110 ó $125</h5>
-                        <ul class="list-group list-group-flush">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Empanadas | $125</h5>
+                        <ul class="list-group list-group-flush flex-grow-1">
                             <li class="list-group-item">Carne</li>
                             <li class="list-group-item">Vegetarianas</li>
                             <li class="list-group-item">Veganas</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="empanadas">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/croquetas.jpg" class="card-img-top" alt="croquetas">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Croquetas | $85</h5>
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush flex-grow-1">
                             <li class="list-group-item">A base de arroz integral, varía el vegetal</li>
                             <li class="list-group-item">Son veganas y sin gluten</li>
                             <li class="list-group-item">Recomendamos acompañar con ensalada petit</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="croquetas">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/tartamenu.jpg" class="card-img-top" alt="tarta">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Tartas</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Tarta porción | $165</li>
-                            <li class="list-group-item">Tarta + ensalada + arroz integral | $315</li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Tarta porción | $165</li><button class="btn btn-outline-success mt-auto" data-producto="tarta-porcion">🛒</button>
+                            <li class="list-group-item">Tarta + ensalada + arroz integral | $315</li><button class="btn btn-outline-success mt-auto" data-producto="tarta-ensalada">🛒</button>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/bocata.JPG" class="card-img-top" alt="bocata">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Bocatas en pan casero | $320</h5>
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush flex-grow-1">
                             <li class="list-group-item">SEITÁN O TOFU MARINADO: Alioli + lechuga + cebolla caramelizada
                                 + zanahoria + tomate + huevo a la plancha</li>
                             <li class="list-group-item">POLLO A LA MOSTAZA Y MIEL: Alioli + lechuga + rúcula + tomate
@@ -184,62 +181,75 @@
                             <li class="list-group-item">BONDIOLA FIAMBRE: Alioli + lechuga + rúcula + cebolla
                                 caramelizada + tomates secos + huevo a la plancha</li>
                             <li class="list-group-item">BONDIOLA BRASEADA: Alioli + rúcula + lechuga + tomate +
-                                zanahoria + huevo a la plancha.</li>
+                                zanahoria + huevo a la plancha</li>
                             <li class="list-group-item">ATÚN: Alioli + lechuga + tomate + aceitunas + huevo duro</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="bocata">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/sopa.jpg" class="card-img-top" alt="sopa">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Sopa | $180 (solo en invierno)</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">A base de vegetales, sin lácteos. </li>
-                            <li class="list-group-item">Consultá por el sabor del día. Podés pedirla de entrada o con
-                                una tarta y sustituirla por la ensalada</li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Cambian todos los días</li>
+                            <li class="list-group-item">Veganas, sin tacc</li>
+                            <li class="list-group-item">Tamaño 500cc</li>
                         </ul>
+                        <button class="btn btn-outline-success mt-auto" data-producto="sopa">🛒</button>
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/brownie.jpg" class="card-img-top" alt="postre y cafe">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Postres</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Brownie $ 120 | con helado $190</li>
-                            <li class="list-group-item">Salchichón de chocolate | $ 95</li>
-                            <li class="list-group-item">Tortita del día $100 | $110</li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Brownie con helado $190</li> <button class="btn btn-outline-success mt-auto" data-producto="brownie">🛒</button>
+                            <li class="list-group-item">Salchichón de chocolate | $95</li><button class="btn btn-outline-success mt-auto" data-producto="salchichon-chocolate">🛒</button>
+                            <li class="list-group-item">Tortita del día $110</li><button class="btn btn-outline-success mt-auto" data-producto="tortita-dia">🛒</button>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
-
             <div class="col">
-                <div class="card border-warning">
+                <div class="card border-warning h-100 d-flex flex-column">
                     <img src="../img/bebidas.jpg" class="card-img-top" alt="jugos">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Bebidas y café</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Jugos naturales - Grande 410ml $160 | chico 320ml $100 (Limonada
-                                con menta y jengibre, Pomelada, Naranja exprimida)</li>
-                            <li class="list-group-item">Agua Salus | $110</li>
-                            <li class="list-group-item">Kombucha Del Mar | $185</li>
-                            <li class="list-group-item">Birra Artesanal | $230</li>
-                            <li class="list-group-item">Línea Coca-Cola | </li>
-                            <li class="list-group-item">Café Do Mercado: Espresso $95 | Americano $120 | Cortado $ 135
-                            </li>
+                        <ul class="list-group list-group-flush flex-grow-1">
+                            <li class="list-group-item">Jugos naturales - Grande 410ml $160 | chico 320ml $100 (Limonada con menta y jengibre, Pomelada, Naranja exprimida)</li><button class="btn btn-outline-success mt-auto" data-producto="jugos-naturales">🛒</button>
+                            <li class="list-group-item">Agua Salus | $110</li><button class="btn btn-outline-success mt-auto" data-producto="agua-salus">🛒</button>
+                            <li class="list-group-item">Kombucha Del Mar | $185</li><button class="btn btn-outline-success mt-auto" data-producto="kombucha">🛒</button>
+                            <li class="list-group-item">Birra Artesanal | $230</li><button class="btn btn-outline-success mt-auto" data-producto="birra-artesanal">🛒</button>
+                            <li class="list-group-item">Línea Coca-Cola | $120 </li><button class="btn btn-outline-success mt-auto" data-producto="coca-cola">🛒</button>
+                            <li class="list-group-item">Café Do Mercado: Cortado $135</li><button class="btn btn-outline-success mt-auto" data-producto="cafe-cortado">🛒</button>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="carrito-container" class="container mt-5">
+        <h2 class="text-center">Carrito de compras</h2>
+        <div class="row justify-content-center">
+            <!-- productos añadidos al carrito -->
+        </div>
+        <div class="text-center mt-3">
+            <button id="finalizar-compra-btn" class="btn btn-outline-success">Finalizar compra</button>
+        </div>
+        <div class="text-center mt-3">
+            <button id="vaciar-carrito" class="btn btn-outline-success">Vaciar carrito</button>
+        </div>
+    </section>
+    
+    
     <footer>
         <div class="social-buttons">
             <a href="https://www.instagram.com/sesamo.uy" target="_blank">
@@ -259,6 +269,8 @@
     <script>
         AOS.init();
     </script>
+   
+ 
 </body>
 
 </html>
